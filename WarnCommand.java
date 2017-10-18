@@ -57,9 +57,7 @@ public class WarnCommand extends Command{
   	 	 	 	 	 Main.warning.set(args[1],++i);
   	 	 	 	 	 sender.sendMessage("§o§3[경고] 경고를 주었습니다.");
   	 	 	 	 	 Main.warning.save();
-  	 	 	 	int iaf = Integer.parseInt(Main.warning.get(args[1]).toString());
-  	 	 	//Main.instance.getServer().getPlayer(args[1]).sendMessage
-			//("관리진"+sender.getName()+"에 의해 경고 1회를 받았습니다.\n누적 경고횟수:"+iaf);
+  	 	 	 	int iaf = Integer.parseInt(Main.warning.get(args[1]).toString()){
   	 	 	 	 	 if(iaf>=5){
   	 	 	 	 		 
   	 	 	 	  		 Main.instance.getServer().getNameBans().addBan(args[1]);
